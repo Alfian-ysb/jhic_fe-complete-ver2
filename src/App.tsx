@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
+import { DefaultSEO } from './components/SEO'
 import './index.css'
 
 // Home imports
@@ -46,6 +47,7 @@ import SabaNotFound from './sabaquiz/pages/notFound'
 function App() {
   return (
     <AuthProvider>
+      <DefaultSEO />
       <Routes>
         {/* Auth Routes */}
         <Route path="/auth/login" element={<Login />} />

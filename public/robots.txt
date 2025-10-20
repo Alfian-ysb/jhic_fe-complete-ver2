@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow private or duplicate pages
+Disallow: /auth/
+Disallow: /lentera-karya/admin
+
+Sitemap: /sitemap.xml
