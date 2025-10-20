@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import ChooseCard from "../components/ChooseCard";
 import PreviewSabaQuiz from "../assets/img/PreviewSabaQuiz.png";
+import PreviewLenteraKarya from "../assets/img/PreviewLenteraKarya.png";
 
 const Dashboard: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const Dashboard: React.FC = () => {
           />
           <ChooseCard 
             title="Lentera Karya" 
-            img={PreviewSabaQuiz} 
+            img={PreviewLenteraKarya} 
             to="/" 
             external={true} 
           />
