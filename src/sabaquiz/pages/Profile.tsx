@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../componets/navbar'
-import ProfileContent from '../componets/ProfileContent'
+import Navbar from '../components/navbar'
+import ProfileContent from '../components/ProfileContent'
 
 const Profile: React.FC = () => {
   return (

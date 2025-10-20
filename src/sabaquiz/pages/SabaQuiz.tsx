@@ -1,7 +1,7 @@
 
 import React from 'react'
-import Navbar from '../componets/navbar'
-import SabaQuizContent from '../componets/SabaQuizContent'
+import Navbar from '../components/navbar'
+import SabaQuizContent from '../components/SabaQuizContent'
 
 const SabaQuiz: React.FC = () => {
   return (

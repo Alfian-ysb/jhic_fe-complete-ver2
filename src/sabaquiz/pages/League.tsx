@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Bronze, Silver, Gold, Diamond, Ruby } from '../componets/rankLogo';
+import { Bronze, Silver, Gold, Diamond, Ruby } from '../components/rankLogo';
 import { API_ENDPOINTS, apiCall } from '../utils/api';
 
 type League = {

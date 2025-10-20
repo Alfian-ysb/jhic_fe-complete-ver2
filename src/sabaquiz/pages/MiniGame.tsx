@@ -1,5 +1,5 @@
 import React from 'react'
-import MiniGameContent from '../componets/MiniGameContent'
+import MiniGameContent from '../components/MiniGameContent'
 
 const MiniGame: React.FC = () => {
   return (

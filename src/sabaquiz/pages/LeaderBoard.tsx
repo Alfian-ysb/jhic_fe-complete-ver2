@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import LeaderBoardContent from "../componets/LeaderBoardContent";
+import LeaderBoardContent from "../components/LeaderBoardContent";
 import { API_ENDPOINTS, apiCall } from "../utils/api";
 
 interface LeaderboardItem {
