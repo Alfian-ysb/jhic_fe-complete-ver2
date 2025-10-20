@@ -1,0 +1,18 @@
+/* Global Theme Tokens (CSS variables) */
+
+:root {
+  /* Fonts */
+  --font-poppins: 'Poppins', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-kufam: 'Kufam', cursive;
+  --font-red-hat: 'Red Hat Display', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-geomanist: 'Geomanist', sans-serif;
+  --font-metropolis: 'Metropolis', sans-serif;
+  --font-tt-norms: 'TT Norms', sans-serif;
+
+  /* Colors */
+  --color-primary-blue: #0041CE;
+  --color-secondary-white: #E4E4E4;
+  --color-neutral-semiblue: #EDF0F8;
+}

@@ -1,5 +1,6 @@
-
 import React, { useState } from 'react'
+import logo from '@assets/images/shared/logo.png'
+import skansabaLogo from '@assets/images/sabaquiz/skansabaLogo.svg'
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -14,7 +15,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <div className=" text-sm font-medium text-gray-700">
                 <img 
-                    src="/images/logo.png" 
+                    src={logo} 
                     alt="Quiz" 
                     className="w-10 h-10 object-contain"
                   />
@@ -29,9 +30,9 @@ const Navbar: React.FC = () => {
           {/* Center - Brand */}
           <div className="hidden md:flex items-center gap-2">
                  <img 
-                    src="/images/skansabaicon.svg" 
+                    src={skansabaLogo} 
                     alt="Quiz" 
-                    className="w-6 h-6 object-contain"
+                    className="w-10 h-10 object-contain"
                   />
             <span className="text-lg font-bold text-gray-800">SKANSABA.DEV</span>
           </div>

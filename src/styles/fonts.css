@@ -1,0 +1,88 @@
+/* Consolidated font-face declarations for the entire app */
+/* Paths are relative to this file (src/styles) */
+
+/* Geomanist */
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../home/assets/font/Geomanist/Geomanist-Regular&Italic/Desktop/Geomanist-Regular.otf') format('opentype'),
+       url('../lentera-karya/font/Geomanist/Geomanist-Regular&Italic/Desktop/Geomanist-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../home/assets/font/Geomanist/Geomanist-Regular&Italic/Desktop/Geomanist-Regular-Italic.otf') format('opentype'),
+       url('../lentera-karya/font/Geomanist/Geomanist-Regular&Italic/Desktop/Geomanist-Regular-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Metropolis */
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../home/assets/font/Metropolis/Metropolis-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../home/assets/font/Metropolis/Metropolis-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../home/assets/font/Metropolis/Metropolis-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../home/assets/font/Metropolis/Metropolis-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../home/assets/font/Metropolis/Metropolis-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TT Norms */
+@font-face {
+  font-family: 'TT Norms';
+  src: url('../home/assets/font/TT-Norms-Font/TT-Norms-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('../home/assets/font/TT-Norms-Font/TT-Norms-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('../home/assets/font/TT-Norms-Font/TT-Norms-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('../home/assets/font/TT-Norms-Font/TT-Norms-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

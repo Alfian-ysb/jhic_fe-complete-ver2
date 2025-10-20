@@ -1,0 +1,18 @@
+/* Global utilities & resets */
+
+/* Keyframes used in SabaQuiz */
+@keyframes shrink {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+/* Scrollbar styling (WebKit) */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey; border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: gray; opacity: 0.3; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: gray; opacity: 0.35; }
+
+/* Basic resets */
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; }

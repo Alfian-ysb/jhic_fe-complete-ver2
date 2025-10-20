@@ -38,21 +38,21 @@ const SabaQuizContent: React.FC = () => {
     )
   }
 
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-red-600 text-lg mb-4">{error}</p>
-          <button
-            onClick={() => window.location.reload()}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-          >
-            Retry
-          </button>
-        </div>
-      </div>
-    )
-  }
+  // if (error) {
+  //   return (
+  //     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+  //       <div className="text-center">
+  //         <p className="text-red-600 text-lg mb-4">{error}</p>
+  //         <button
+  //           onClick={() => window.location.reload()}
+  //           className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+  //         >
+  //           Retry
+  //         </button>
+  //       </div>
+  //     </div>
+  //   )
+  // }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -76,7 +76,7 @@ const SabaQuizContent: React.FC = () => {
 
           {/* League Card */}
           <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow cursor-pointer"
-          onClick={() => window.location.href = '/league'}
+          onClick={() => window.location.href = '/sabaquiz/league'}
           >
             <div className="w-16 h-16 bg-[#ffff99] rounded-2xl mx-auto mb-4 flex items-center justify-center">
               <img 

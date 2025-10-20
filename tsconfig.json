@@ -13,6 +13,15 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+  "types": ["vite/client", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@home/*": ["src/home/*"],
+      "@auth/*": ["src/auth/*"],
+      "@lentera/*": ["src/lentera-karya/*"],
+      "@sabaquiz/*": ["src/sabaquiz/*"],
+      "@assets/*": ["src/assets/*"]
+    },
 
     /* Linting - Relaxed for combined repo */
     "strict": false,

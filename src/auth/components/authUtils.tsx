@@ -16,7 +16,7 @@ const authUtils = {
   // Clear auth (logout)
   logout: () => {
     localStorage.removeItem('user');
-    window.location.href = '/login';
+    window.location.href = '/auth/login';
   },
 
   // Headers for API requests (cookies sent automatically)
