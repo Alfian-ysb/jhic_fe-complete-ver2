@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import Button from '../button'
 import NewsItems from './newsItems'
+import Berita from '../../data/beritaData.json'
 
 // Interface untuk berita
 interface NewsArticle {
   source: { name: string }
   title: string
   description?: string
+  content: string[]
   url: string
   urlToImage?: string
   publishedAt: string
@@ -19,30 +21,13 @@ const newsFeed: React.FC = () => {
 
   // Async fetch berita
   async function fetchNews() {
-    try {
+    try { 
       setLoading(true)
-      const response = await fetch(
-        'https://newsapi.org/v2/top-headlines?' +
-        'sources=bbc-news&' +
-        'apiKey=1ef2239cd4ce426ebdb044d8dfe9fdfd'
-      )
-      
-      if (!response.ok) {
-        console.warn('News API returned error:', response.status)
-        // Use mock data when API fails
-        setArticles([])
-        return
-      }
-      
-      const data = await response.json()
-      
-      if (data.articles && Array.isArray(data.articles)) {
-        setArticles(data.articles)
-      } else {
-        console.warn('Invalid news data received')
-        setArticles([])
-      }
-    } catch (error) {
+      // Simulasi fetch dari local JSON
+      const data = await Promise.resolve(Berita.articles as NewsArticle[])
+      setArticles(data)
+    }
+    catch (error) {
       console.error('Error fetching news:', error)
       setArticles([])
     } finally {
