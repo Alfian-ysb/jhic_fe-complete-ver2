@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Left - Logo */}
-          <div className="flex items-center">
+          <button onClick={() => window.location.href = "/sabaquiz"} className="flex items-center cursor-pointer">
             <div className=" text-sm font-medium text-gray-700">
                 <img 
                     src={logo} 
@@ -25,17 +25,17 @@ const Navbar: React.FC = () => {
               </div>
               <span className="text-xl font-bold text-gray-900">SabaQuiz</span>
             </div>
-          </div>
+          </button>
 
           {/* Center - Brand */}
-          <div className="hidden md:flex items-center gap-2">
+          <button onClick={() => window.location.href = "/sabaquiz"} className="hidden md:flex items-center gap-2 cursor-pointer">
                  <img 
                     src={skansabaLogo} 
                     alt="Quiz" 
                     className="w-10 h-10 object-contain"
                   />
             <span className="text-lg font-bold text-gray-800">SKANSABA.DEV</span>
-          </div>
+          </button>
 
           {/* Right - User Menu */}
           <div className="flex items-center gap-4">
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
             <div className="hidden sm:block relative">
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
+                className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors cursor-pointer"
               >
                 <span className="text-sm font-medium">Akun</span>
                 <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               {/* Dropdown Menu */}
               {isDropdownOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
-                  <button onClick={() => window.location.href="/profile"} className="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  <button onClick={() => window.location.href="/sabaquiz/profile"} className="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                     </svg>
@@ -87,11 +87,11 @@ const Navbar: React.FC = () => {
         {/* Mobile Dropdown */}
         {isMobileMenuOpen && (
           <div className="sm:hidden py-4 border-t border-gray-200">
-            <a href="/LeaderBoard" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Leaderboard</a>
-            <a href="/MiniGame" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Quiz</a>
+            <a href="/sabaquiz/leaderboard" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Leaderboard</a>
+            <a href="/sabaquiz/minigame" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Quiz</a>
             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">League</a>
             <div className="border-t border-gray-200 mt-2 pt-2">
-              <a href="/profile" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profil Saya</a>
+              <a href="/sabaquiz/profile" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profil Saya</a>
               <a href="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
             </div>
           </div>

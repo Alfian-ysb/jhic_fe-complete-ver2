@@ -12,21 +12,20 @@ type NavItem = {
 const NAV_ITEMS: NavItem[] = [
     {
         label: 'Home',
-        to: '/'
+        to: '/lentera-karya',
     },
   {
     label: 'Account',
     children: [
-      { label: 'My Profile', to: '/my-profile' },
-      { label: 'Log Out', to: '/login' },
+      { label: 'My Profile', to: '/lentera-karya/profile' },
+      { label: 'Log Out', to: '/' },
     ],
   },
   {
     label: 'Menu',
     children: [
-      { label: 'Dashboard', to: '/dashboard' },
-      { label: 'Upload', to: '/upload' },
-      { label: 'Back to Home', to: '/' },
+      { label: 'Dashboard', to: '/lentera-karya/dashboard' },
+      { label: 'Upload', to: '/lentera-karya/upload' },
     ],
   }
 ]

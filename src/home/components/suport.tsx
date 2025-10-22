@@ -9,7 +9,7 @@ const suport = () => {
     <div className="w-full">
       <div className="flex flex-col items-center mx-auto py-8">
         <p className="text-2xl text-neutral-500">JHIC Powered by</p>
-        <div className="flex flex-wrap w-fit">
+        <div className="flex flex-wrap items-center justify-center w-fit">
           <img src={LogoJhic} alt="4 logo jhic" className="w-[12rem] object-contain h-auto lg:grayscale-90 hover:grayscale-0"/>
           <img src={JagoanHosting} alt="4 logo jhic" className="w-[12rem] object-contain h-auto lg:grayscale-90 hover:grayscale-0"/>
           <img src={Komdigi} alt="4 logo jhic" className="w-[12rem] object-contain h-auto lg:grayscale-90 hover:grayscale-0"/>

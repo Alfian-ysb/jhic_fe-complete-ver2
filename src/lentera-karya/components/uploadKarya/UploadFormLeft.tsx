@@ -28,7 +28,7 @@ export default function UploadFormLeft({
   isUploading,
 }: UploadFormLeftProps) {
   return (
-    <div className="w-full flex col-start-1 flex-col justify-between gap-4">
+    <div className="w-full flex-1 flex col-start-1 flex-col justify-between gap-4">
       {/* Judul */}
       <div className="flex flex-col gap-2">
         <label htmlFor="title" className="font-semibold">

@@ -17,7 +17,7 @@ const KepalaSekolah: React.FC<KepalaSekolahProps> = ({ imageSrc, name, children,
       <div className='grid grid-cols-1 md:grid-cols-[1fr_2fr] grid-rows-[auto_auto] md:grid-rows-[1fr_10fr] gap-x-6 md:gap-x-12 gap-y-6 md:gap-y-0 items-start min-h-[auto] md:h-[90vh] px-4 sm:px-6 md:px-[5%]'>
         {/* Image occupies left column spanning both rows */}
         <div className='order-1 md:order-none md:col-start-1 md:row-start-1 md:row-span-2'>
-          <img src={imageSrc} alt={`Foto ${name}`} className='w-full md:w-6xl h-auto rounded-md' loading='lazy' />
+          <img src={imageSrc} alt={`Foto ${name}`} className='w-full md:w-6xl  rounded-md' loading='lazy' />
         </div>
 
         {/* Name (top-right) */}

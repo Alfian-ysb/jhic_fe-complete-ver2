@@ -30,19 +30,18 @@ import Dashboard from './auth/pages/dashboard'
 import LenteraKarya from './lentera-karya/pages/lenteraKarya'
 import LenteraDashboard from './lentera-karya/pages/dashboard'
 import UploadKarya from './lentera-karya/pages/uploadKarya'
+import KaryaProfile from './lentera-karya/pages/Profile'
 import Detail from './lentera-karya/pages/detail'
 import Admin from './lentera-karya/pages/admin/adminDashboard'
 import AddCategory from './lentera-karya/pages/admin/components/CategoryManagement'
-import LenteraNotFound from './lentera-karya/pages/notFound'
 
 // SabaQuiz imports
 import SabaQuiz from './sabaquiz/pages/SabaQuiz'
 import MiniGame from './sabaquiz/pages/MiniGame'
 import LeaderBoard from './sabaquiz/pages/LeaderBoard'
-import Profile from './sabaquiz/pages/Profile'
+import SabaProfile from './sabaquiz/pages/Profile'
 import CreateQuiz from './sabaquiz/pages/CreateQuiz'
 import LeagueOverview from './sabaquiz/pages/League'
-import SabaNotFound from './sabaquiz/pages/notFound'
 
 function App() {
   return (
@@ -57,6 +56,7 @@ function App() {
 
         {/* Lentera Karya Routes */}
         <Route path="/lentera-karya" element={<LenteraKarya />} />
+        <Route path="/lentera-karya/profile" element={<KaryaProfile />} />
         <Route path="/lentera-karya/dashboard" element={<LenteraDashboard />} />
         <Route path="/lentera-karya/upload" element={<UploadKarya />} />
         <Route path="/lentera-karya/detail/:id" element={<Detail />} />
@@ -67,7 +67,7 @@ function App() {
         <Route path="/sabaquiz" element={<SabaQuiz />} />
         <Route path="/sabaquiz/minigame" element={<MiniGame />} />
         <Route path="/sabaquiz/leaderboard" element={<LeaderBoard />} />
-        <Route path="/sabaquiz/profile" element={<Profile />} />
+        <Route path="/sabaquiz/profile" element={<SabaProfile />} />
         <Route path="/sabaquiz/create-quiz" element={<CreateQuiz />} />
         <Route path="/sabaquiz/league" element={<LeagueOverview />} />
 

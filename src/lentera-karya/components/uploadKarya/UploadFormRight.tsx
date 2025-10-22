@@ -22,7 +22,7 @@ export default function UploadFormRight({
   isUploading,
 }: UploadFormRightProps) {
   return (
-    <div className="w-full h-full col-start-2 flex flex-col justify-between">
+    <div className="w-full h-full flex-1 flex flex-col gap-10">
       {/* File Karya */}
       <div className="flex flex-col gap-2">
         <label htmlFor="file" className="font-semibold">

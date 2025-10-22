@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { API_ENDPOINTS, apiCall } from '../utils/api'
+import QuizIcon from '../assets/img/quizIcon.svg'
+import LeagueIcon from '../assets/img/leagueIcon.svg'
+import LeaderboardIcon from '../assets/img/leaderboardIcon.svg'
 
 interface QuizItem {
   id: number
@@ -64,7 +67,7 @@ const SabaQuizContent: React.FC = () => {
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow cursor-pointer">
             <div className="w-16 h-16 bg-[#99ddff] rounded-2xl mx-auto mb-4 flex items-center justify-center">
               <img 
-                src="/images/puzzle.svg" 
+                src={QuizIcon}
                 alt="Quiz Icon" 
                 className="w-10 h-10 object-contain"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -80,7 +83,7 @@ const SabaQuizContent: React.FC = () => {
           >
             <div className="w-16 h-16 bg-[#ffff99] rounded-2xl mx-auto mb-4 flex items-center justify-center">
               <img 
-                src="/images/piala.svg" 
+                src={LeagueIcon}
                 alt="League Icon" 
                 className="w-10 h-10 object-contain"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -92,12 +95,12 @@ const SabaQuizContent: React.FC = () => {
 
           {/* Leaderboard Card */}
           <button 
-            onClick={() => window.location.href = '/leaderboard'}
+            onClick={() => window.location.href = '/sabaquiz/leaderboard'}
             className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow cursor-pointer"
           >
             <div className="w-16 h-16 bg-[#b0eeb0] rounded-2xl mx-auto mb-4 flex items-center justify-center">
               <img 
-                src="/images/leaderboard.svg" 
+                src={LeaderboardIcon}
                 alt="Leaderboard Icon" 
                 className="w-10 h-10 object-contain"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -118,7 +121,7 @@ const SabaQuizContent: React.FC = () => {
             quizList.map((quiz) => (
               <div
                 key={quiz.id}
-                onClick={() => window.location.href = '/minigame'}
+                onClick={() => window.location.href = '/sabaquiz//minigame'}
                 className="bg-white rounded-2xl p-4 sm:p-6 flex flex-col xs:flex-row sm:flex-row items-start sm:items-center justify-between hover:shadow-lg transition-all cursor-pointer border border-gray-200 w-full hover:border-blue-300 active:scale-[0.99]"
               >
                 <div className="flex items-center text-left gap-4 w-full">

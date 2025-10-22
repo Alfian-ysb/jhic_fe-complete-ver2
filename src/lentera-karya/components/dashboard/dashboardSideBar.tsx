@@ -20,7 +20,7 @@ const DashboardSideBar = ({ activeMenu, onMenuChange }: DashboardSideBarProps) =
             S
           </div>
           <div>
-            <p className="font-semibold">Satria</p>
+            <p className="font-semibold">Siswa1</p>
             <p className="text-sm text-gray-500">Siswa</p>
           </div>
         </div>

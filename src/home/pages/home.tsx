@@ -43,7 +43,7 @@ const Home = () => {
                       // Navigate ke SabaQuiz atau action lainnya
                       window.location.href = "/sabaquiz";
                     }}
-                    className="bg-blue-600 text-white text-xl font-semibold py-4 px-12 rounded-full hover:bg-blue-700 transition shadow-lg"
+                    className="bg-blue-600 text-white text-xl font-semibold py-4 px-12 rounded-full hover:bg-blue-700 transition shadow-lg cursor-pointer"
                   >
                     SabaQuiz
                   </button>
@@ -58,7 +58,7 @@ const Home = () => {
                       // Navigate ke Lentera Karya atau action lainnya
                       window.location.href = "/lentera-karya";
                     }}
-                    className="bg-orange-500 text-white text-xl font-semibold py-4 px-12 rounded-full hover:bg-orange-600 transition shadow-lg"
+                    className="bg-orange-500 text-white text-xl font-semibold py-4 px-12 rounded-full hover:bg-orange-600 transition shadow-lg cursor-pointer"
                   >
                     Lentera Karya
                   </button>
@@ -129,7 +129,7 @@ const Home = () => {
         </div>
         
         <KepalaSekolah imageSrc={kepalaSekolah} name="Raharjo, S.IP, M.Pd">
-          <p className="font-geomanist text-sm sm:text-base md:text-lg leading-relaxed">
+          <p className="font-geomanist text-md sm:text-base md:text-lg leading-relaxed">
             Assalamualaikum warahmatullahi wabarakatuh, Salam sejahtera bagi
             kita semua. Saya, Raharjo, M.Pd., Kepala SMK Negeri 1 Bantul, dengan
             bangga menyampaikan visi dan misi sekolah kami, yaitu mencetak

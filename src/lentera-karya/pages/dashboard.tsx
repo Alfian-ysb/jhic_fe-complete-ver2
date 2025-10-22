@@ -24,13 +24,13 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="h-screen bg-gray-50 flex flex-col overflow-hidden">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
         <Navbar position=""/>
 
-      <div className="flex-1 px-16 box-border py-8 grid grid-cols-5 grid-rows-1 gap-4 overflow-hidden">
+      <div className="flex-1 min-h-0 box-border py-6 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-5 gap-4">
         {/* Sidebar - Fixed, tidak scroll */}
-        <aside className="col-start-1 col-span-1 rounded-xl bg-white shadow-md overflow-y-auto">
+        <aside className="rounded-xl bg-white shadow-md overflow-y-auto">
           <DashboardSideBar 
             activeMenu={activeMenu} 
             onMenuChange={setActiveMenu} 
@@ -38,7 +38,7 @@ const Dashboard = () => {
         </aside>
 
         {/* Main Content - Scrollable */}
-        <main className="box-border p-2 rounded-2xl bg-white shadow-lg col-start-2 col-span-4 overflow-y-auto">
+        <main className="box-border p-4 md:p-6 rounded-2xl bg-white shadow-lg lg:col-span-4 overflow-y-auto min-h-0">
           {renderContent()}
         </main>
       </div>
