@@ -3,37 +3,36 @@ import Navbar  from '../components/navbar'
 import { Link } from 'react-router-dom'
 import slugify from '../utils/slugify'
 import Title from '../components/tiltle'
+import Berita from '../data/beritaData.json'
 
 interface News {
   title: string;
   description: string;
-  // NewsAPI returns `urlToImage` (may be null)
+  content: string[];
   urlToImage?: string | null;
   publishedAt: string;
 }
 
 const news: React.FC = () => {
-    const [articles, setArticles] = useState<News[]>([])
-    const [loading, setLoading] = useState(true)
-    
-    // Async fetch berita
-    async function fetchNews() {
-      try {
-        setLoading(true)
-        const response = await fetch(
-            'https://newsapi.org/v2/top-headlines?' +
-            'sources=bbc-news&' +
-            'apiKey=1ef2239cd4ce426ebdb044d8dfe9fdfd'
-        )
-        const data = await response.json()
-        setArticles(data.articles)
-        console.log(data.articles)
-      } catch (error) {
-        console.error('Error:', error)
-      } finally {
-        setLoading(false)
-      }
+    // State untuk menyimpan semua berita
+  const [articles, setArticles] = useState<News[]>([])
+  const [loading, setLoading] = useState(true)
+
+  // Async fetch berita
+  async function fetchNews() {
+    try { 
+      setLoading(true)
+      // Simulasi fetch dari local JSON
+      const data = await Promise.resolve(Berita.articles as News[])
+      setArticles(data)
     }
+    catch (error) {
+      console.error('Error fetching news:', error)
+      setArticles([])
+    } finally {
+      setLoading(false)
+    }
+  }
   
     useEffect(() => {
       fetchNews()

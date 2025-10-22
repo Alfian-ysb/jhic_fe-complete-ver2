@@ -53,7 +53,7 @@ const newsFeed: React.FC = () => {
   const publishedDate = (index: number) => getNews(index)?.publishedAt?.slice(0, 10) || 'N/A'
 
   return (
-    <div className="w-full py-12 sm:py-16 lg:py-24 px-4 sm:px-10 lg:px-24 mt-8 sm:mt-12 md:mt-16 lg:mt-20">
+    <div className="w-full py-12 sm:py-16 lg:py-24 px-4 sm:px-10 lg:px-24">
       {/* Title */}
       <div className="w-full flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-12">
         <div className='flex flex-col'>

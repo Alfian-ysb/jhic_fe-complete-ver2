@@ -50,8 +50,8 @@ const NAV_ITEMS: NavItem[] = [
    },
   { label: 'Spesial', 
     children: [
-      { label: 'Lentera Karya', to: '/lentera-Karya' },
-      { label: 'SabaQuiz', to: '/SabaQuiz' },
+      { label: 'Lentera Karya', to: '/lentera-karya' },
+      { label: 'SabaQuiz', to: '/sabaquiz' },
     ]
    },
 ]
